@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Список покупок BETA</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <link rel="icon" type="image/x-icon" href="http://icons.iconarchive.com/icons/graphicloads/100-flat/256/shopping-icon.png" />
+</head>
+
+
+<body>
+	<main>
+		<div id="left-column">
+			<h1>Список покупок:</h1>
+			    </br>
+					</br>
+			<p id="empty-order">Список пуст...</p>
+		</div>
+		<div id="right-column">
+			<h1>Добавить покупку</h1>
+			    </br>
+			<form>
+				<label for="name">* Покупка</label>
+				<input type="text" name="name" id="name" class="form-control" list="list">
+				<label for="size">* Количество</label>
+				<input type="number" name="size" id="size" class="form-control" min="1" max="30" list="val">
+				<label for="description">* Цена</label>
+				<input type="number" name="description" id="description" class="form-control" placeholder="100"  step="10" list="money" max="1000">
+				<button id="add" class = " btn btn-success ">Добавить</button>
+				<datalist id="list">
+ 		<option>Молоко</option>
+ 		<option>Мясо</option>
+ 		<option>Сливки</option>
+ 		<option>Кефир</option>
+ 		<option>Ломтики</option>
+ 		<option>Морковь</option>
+ 		<option>Хлеб</option>
+		<option>Банан</option>
+		<option>Баклажан</option>
+		<option>Колбаса</option>
+		<option>Сыр</option>
+		<option>Зефир</option>
+		<option>Масло</option>
+		<option>Сливочное масло</option>
+		<option>Плавленный сыр</option>
+		<option>Яйца</option>
+		<option>Творог</option>
+		<option>Сгущенка</option>
+		<option>Макароны</option>
+</datalist>
+
+					<datalist id="money">
+						<option>10</option>
+						<option>20</option>
+						<option>30</option>
+						<option>40</option>
+						<option>50</option>
+						<option>60</option>
+						<option>70</option>
+						<option>80</option>
+						<option>90</option>
+						<option>100</option>
+						<option>200</option>
+						<option>300</option>
+						<option>400</option>
+						<option>500</option>
+						<option>600</option>
+						<option>700</option>
+						<option>800</option>
+						<option>900</option>
+						<option>1000</option>
+					</datalist>
+					<datalist id="val">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+
+					</datalist>
+
+			</form>
+			    </br>
+			<div class="copyright">
+            &copy; 2020 ParTyPlayGo. All rights reserved.
+					</br>
+						Патч 2.4.0. 2020
+        </div>
+		</div>
+
+	</main>
+
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyApLCfagBdLUyEqSgd64QabiiV3clopK9E",
+    authDomain: "shopping-list-123321.firebaseapp.com",
+    databaseURL: "https://shopping-list-123321.firebaseio.com",
+    projectId: "shopping-list-123321",
+    storageBucket: "shopping-list-123321.appspot.com",
+    messagingSenderId: "466378528072",
+    appId: "1:466378528072:web:7c2c799002dba1e0b60f7d",
+    measurementId: "G-JNKLDGCQP2"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+</html>
