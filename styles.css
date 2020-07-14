@@ -83,17 +83,27 @@ main {
 	float: left;
 }
 
+#empty-order {
+		font-family: 'Comfortaa', cursive;
 
+}
+#copyright {
+				font-family: 'Comfortaa', cursive;
+}
 
 h1 {
 	font-size: 34px;
 	font-weight: normal;
 	margin-bottom: 30px;
 }
+ p {
+	 					font-family: 'Comfortaa', cursive;
 
+ }
 form {
 	background: white;
 	padding: 0 40px 55px 40px;
+					font-family: 'Comfortaa', cursive;
 }
 
 form label {
